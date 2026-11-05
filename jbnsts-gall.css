@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #EAF4F4;
+    color: var(--surface);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Color pallets */
+:root {
+    --primary: #071B2D;
+    --secondary: #123B52;
+    --accent: #00B8A9;
+    --background: #EAF4F4;
+    --surface: #FFFFFF;
+    --text: #193548;
+
+}
+
+/* Nav bar design */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+    background-color: var(--primary);
+
+}
+
+.navcontainer {
+    width: min(1100px, 92%);
+    margin: auto;
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: clamp(1rem, 3vw, 1.35rem);
+    justify-content: left;
+}
+
+.brand img {
+    height: auto;
+    width: clamp(2rem, 4vw, 3rem);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: arial;
+    font-weight: bold;
+    font-size: clamp(0.5rem, 3vh, 1rem);
+    cursor: pointer;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.107);
+    border: #ffffffa1 solid 0.5px;
+    padding: 10px 17px;
+    border-radius: 12px;
+    transition: background 0.3s;
+}
+
+.dropdown summary:hover {
+    background-color: var(--accent);
+}
+
+.dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.arrow {
+    transition: 0.3s;
+}
+
+.dropdown[open] .arrow {
+    transform: rotate(180deg);
+}
+
+.dropdwncontents {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    background-color: white;
+    min-width: 200px;
+
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+    animation: dropdownFade 0.2s ease-in;
+
+}
+
+.dropdwncontents a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 12px 10px;
+    border-radius: 7px;
+
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s;
+
+}
+
+.dropdwncontents a:hover {
+    background-color: rgba(181, 177, 177, 0.211);
+    color: var(--accent);
+
+}
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+        transform: scale(0.65);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transform: scale(1.0);
+    }
+}
