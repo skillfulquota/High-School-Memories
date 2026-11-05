@@ -161,3 +161,10 @@ body {
         transform: scale(1.0);
     }
 }
+
+@media (max-width: 480px) {
+    .brand {
+        gap: 8px;
+        font-size: 1rem;
+    }
+}
