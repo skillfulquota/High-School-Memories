@@ -64,7 +64,7 @@ body {
     text-decoration: none;
     font-family: Georgia, serif;
     font-size: clamp(1rem, 3vw, 1.35rem);
-    justify-content: left;
+    white-space: nowrap;
 }
 
 .brand img {
