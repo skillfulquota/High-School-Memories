@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBNSTS - Memories</title>
+    <link rel="stylesheet" href="jbnsts-gall copy.css">
+    <meta name="description" content="Hey there! Explore the gellery of our High School Memories. Let's make them unforgettable together.">
+</head>
+
+<body>
+    <!--navbar section-->
+    <header class="navbar">
+        <nav class="navcontainer">
+            <a href="#" class="brand">
+                <img src="High School Memories Emblem.png" alt="sitelogo">
+                <span>High School Memories</span>
+            </a>
+            <details class="dropdown">
+                <summary>
+
+                    <span>Explore </span>
+                    <span class="arrow"> ▼</span>
+                </summary>
+                <div class="dropdwncontents">
+                    <a href="index.html">Home</a>
+                    <a href="#description">Description</a>
+                    <a href="index.html#galleries">Galleries</a>
+                    <a href="#footer">Credits</a>
+                    <a href="privacy.html">Privacy & Complaints</a>
+                    <a href="https://github.com/skillfulquota/High-School-Memories" target="_blank">Github ➹</a>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <main>
+        <!-- about section -->
+        <section class="about" id="description">
+            <p class="eyebrow">A JOURNEY THROUGH THE WONDERS OF SCIENCE</p>
+            <h1>Some moments worth revisiting and looking forward <span>again.</span></h1>
+            <p class="about-desc">A 6-day Science Seminar at Jagadish Bose National Science Talent Search with friends.
+                Lectures, labs, ideas, and a whole week of memories we made together.</p>
+            <a href="#gallery-section">Explore Gallery <span class="xarrow">↓</span></a>
+        </section>
+
+        <!-- gallary section -->
+        <section class="gallery-section" id="gallery-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE COLLECTION</p>
+                    <h2>Our Gallery</h2>
+                </div>
+                <p class="section-sub">Every picture has a story.</p>
+            </div>
+        </section>
+
+        <section class="gallery-contents">
+            <div class="masonry" id="masonry"></div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-content">
+
+            <h3>High School Memories.</h3>
+
+            <p>
+                Designed & Developed by Sk Sakib
+            </p>
+
+            <p>
+                Made with HTML, CSS, and a little bit of creativity.
+            </p>
+
+            <p class="footer-note">
+                A little website made for preserving valuable
+                memories forever within the abyss of the World Wide Web.
+                Contact me at <span class="email"><a href="mailto:s87560921@gmail.com">Email:
+                        s87560921@gmail.com</a></span> for any queries or suggestions.
+            </p>
+
+            <a href="https://github.com/skillfulquota/High-School-Memories" target="_blank" class="github-link">
+                Visit my GitHub ↗
+            </a>
+            <p>Note: To download an image, right-click on it and select "Save Image As...".</p>
+        </div>
+
+        <div class="copyright">
+            © 2026 | Project High School Memories
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <!-- script for images in div masonry -->
+
+
+    <script>
+        const images = ["IMG-20250318-WA0020.jpg", "20241129_230634-COLLAGE.jpg", "IMG-20250320-WA0009.jpg", "20250401_125228-COLLAGE.jpg", "IMG-20250318-WA0022.jpg", "IMG-20250320-WA0010.jpg", "IMG-20241027-WA0061.jpg", "IMG-20250318-WA0023.jpg", "IMG-20250321-WA0002(1).jpg", "IMG-20241027-WA0064~2.jpg", "IMG-20250318-WA0024.jpg", "IMG-20250321-WA0003.jpg", "IMG-20241027-WA0066.jpg", "IMG-20250318-WA0028.jpg", "IMG-20250321-WA0005.jpg", "IMG-20241027-WA0068.jpg", "IMG-20250319-WA0002.jpg", "IMG-20250321-WA0006.jpg", "IMG-20250318-WA0002.jpg", "IMG-20250320-WA0001.jpg", "IMG-20250321-WA0009.jpg", "IMG-20250318-WA0003.jpg", "IMG-20250320-WA0002-COLLAGE.jpg", "IMG-20250321-WA0012.jpg", "IMG-20250318-WA0007.jpg", "IMG-20250320-WA0002(1).jpg", "IMG-20250321-WA0013.jpg", "IMG-20250318-WA0008.jpg", "IMG-20250320-WA0003.jpg", "IMG-20250321-WA0015.jpg", "IMG-20250318-WA0012.jpg", "IMG-20250320-WA0004.jpg", "IMG-20250321-WA0020.jpg", "IMG-20250318-WA0014 (2).jpg", "IMG-20250320-WA0005 (2).jpg", "IMG-20250321-WA0021 (2).jpg", "IMG-20250318-WA0014.jpg", "IMG-20250320-WA0005.jpg", "IMG-20250321-WA0021.jpg", "IMG-20250318-WA0017.jpg", "IMG-20250320-WA0006 (2).jpg", "IMG-20250321-WA0023 (2).jpg", "IMG-20250318-WA0019 (2).jpg", "IMG-20250320-WA0006.jpg", "IMG-20250321-WA0023.jpg", "IMG-20250318-WA0019 (3).jpg", "IMG-20250320-WA0008 (2).jpg", "IMG-20250318-WA0019.jpg", "IMG-20250320-WA0008.jpg"];
+
+        document.getElementById('masonry').innerHTML = images.map(f => `<div class="item"><img src="jbnsts/${encodeURI(f)}" loading="lazy"></div>`).join('');
+    </script>
+</body>
+
+</html>

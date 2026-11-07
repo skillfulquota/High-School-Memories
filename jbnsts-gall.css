@@ -36,7 +36,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    top: 0; /* very imortant */
+    top: 0;
+    /* very imortant */
     position: sticky;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
     z-index: 100;
@@ -174,6 +175,9 @@ body {
 
 
 /* HERO SECTION */
+main {
+    background-color: var(--background);
+}
 
 .about {
     display: flex;
@@ -287,31 +291,47 @@ body {
 /* #Images Section */
 
 .masonry {
-  column-count: 5;
-  column-gap: 16px;
-  padding: 16px;
+    background-color: white;
+    border-radius: 12px;
+    column-count: 5;
+    column-gap: 16px;
+    padding: 16px;
 }
 
 .item {
-  break-inside: avoid; 
-  margin-bottom: 16px;
-  border-radius: 16px;
-  overflow: hidden;
+    break-inside: avoid;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 16px;
-  transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    transition: transform 0.3s ease-in-out;
 }
 
 
 /* Responsive */
-@media (max-width: 1200px) { .masonry { column-count: 4; } }
-@media (max-width: 900px)  { .masonry { column-count: 3; } }
-@media (max-width: 600px)  { .masonry { column-count: 2; } }
+@media (max-width: 1200px) {
+    .masonry {
+        column-count: 4;
+    }
+}
+
+@media (max-width: 900px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 600px) {
+    .masonry {
+        column-count: 2;
+    }
+}
 
 
 .item img:hover {
@@ -435,6 +455,7 @@ body {
 /* Respect reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
