@@ -1,0 +1,20 @@
+
+{
+  "name": "High School Memories",
+  "short_name": "Memories",
+  "icons": [
+    {
+      "src": "/High-School-Memories/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/High-School-Memories/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#071B2D",
+  "background_color": "#071B2D",
+  "display": "standalone"
+}
