@@ -144,7 +144,8 @@ body {
 
 }
 
-.dropdwncontents a:hover {
+.dropdwncontents a:hover,
+.dropdown a.active {
     background-color: rgba(181, 177, 177, 0.211);
     color: var(--accent);
 
